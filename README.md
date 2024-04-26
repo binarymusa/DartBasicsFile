@@ -1,4 +1,4 @@
-This is a file covering the basic of Dart programming language.
+This is a file covering the basic of Dart programming language
 
 The files are categorized to 5 main and 2 secondary:
 MAIN FILES:
