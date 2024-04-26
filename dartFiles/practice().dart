@@ -3,6 +3,14 @@
 import 'dart:io';
 // import 'dart:math';
 
+/* 
+
+  THE PAGE COVERS BRIEFS OR BASICS OF DART SUCH AS :
+  USER INPUT,
+  A SIMPLE MADLIB'S GAME AT THE BOTTOM,
+
+*/
+
 void main(){
  /* var name = 'kevin';
   var name2 = 'miguel';
@@ -39,7 +47,7 @@ print(test2); */
 
 
 
-// user input, checking nullables, converting them -    -   -   -   -
+// USER INPUT, NULL, NON-NULL OPERATORS, CONVERTING THEM      .     .     .
 
  // Prompt the user to enter their name
  /*  stdout.write("Please enter your name: ");
@@ -94,7 +102,7 @@ print(test2); */
   print('$othervalue2'); */
 
 
-  /* if the value pi = to nll, then the second round throws the null without executing the 
+  /* if the value pi = to null, then the second round throws the null without executing the 
   round function ,else the first round cannot return anything since the receiver is null
   if a null check is added to round1, the code executes throwing an error
   safe navigation operator = (?.)*/
@@ -106,7 +114,7 @@ print(test2); */
   
 
 
-  //  madlibs game -    -   -   -   -
+  //  MADLIBS GAME      .     .     .
 
  /*  stdout.write("Please enter your noun: ");
   String userNoun = stdin.readLineSync()!;
@@ -114,7 +122,6 @@ print(test2); */
   stdout.write("Please enter your verb: ");
   String userVerb = stdin.readLineSync()!;
  
-
   print('Douglas the ${userNoun} likes ${userVerb}'); */
 
 

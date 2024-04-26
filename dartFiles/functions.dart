@@ -1,7 +1,14 @@
 // import 'dart:ffi';
 import 'dart:io';
 
-/* THE PAGE COVERS FUNCTIONS(NAMED FUNCTIONS, ANONYMOUS FUNCTIONS) */
+/* 
+
+  THE PAGE COVERS FUNCTIONS
+  NAMED FUNCTIONS,
+  ANONYMOUS FUNCTIONS 
+
+*/
+    
 
 // use functions out of the main body function
 
@@ -38,13 +45,16 @@ void myAction(int value) {
   print("$b");
 } */
 
-// THE 'typedef' KEYWORD
+
+// THE 'typedef' KEYWORD      .     .     .
+
 // used to create function type aliases, allowing you to define custom types for functions
 /* typedef StringToStringFunction = String Function(String);
 
 String addExclamation(String text) {
   return '$text!';
 } */
+
 
 void main() {
 
@@ -66,6 +76,7 @@ void main() {
 
 
   // ANONYMOUS FUNCTIONS  PART .     .     .
+
   // declared within the context where it's used
 
   // An anonymous function that takes no parameters
@@ -85,6 +96,7 @@ void main() {
 
 
   // An anonymous function that takes two integers and returns their sum
+  // to the right of the equal sign in the function definition  is a parameter list defining the function's signature.
   /* var sum = (int a, int b) {
     return a + b;
   };
