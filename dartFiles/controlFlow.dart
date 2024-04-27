@@ -30,7 +30,7 @@ import 'dart:io';
   }
 
   if (!isValidOperator) {
-  print('Invalid operator(${answer}),...');
+  print('Invalid operator(${answer})...');
   
   }
   return answer;
@@ -41,8 +41,8 @@ double num(){
   stdout.write("Please enter number: "); 
   double number2 = double.parse(stdin.readLineSync()!);
   return number2;
-} */
-
+}
+ */
 
 void main(){
 
@@ -70,8 +70,8 @@ void main(){
 
 
   // USING NAMED FUNCTION FOR THE CALCULATOR     .    .     .
-
-  /* double number1 = num();
+/* 
+  double number1 = num();
   String oper = operator();
   double number2 = num(); */
 
@@ -96,30 +96,51 @@ void main(){
 
 
   // CALCULATOR ARITHMETIC EXECUTION     .    .     .
-
-  /* if (oper == '+'){
-    double result = number1 + number2;
-    print(result);
+/* 
+  if (oper == '+'){
+     print(number1 + number2);
   }
   else if (oper == '-'){
-    double result = number1 - number2;
-    print(result);
+     print(number1 - number2);
+  }
+  else if (oper == '*'){  
+    print(number1 * number2);
+   
   }
   else if (oper == '/'){
-    double result = number1 / number2;
-    print(result);
-  }
-  else if (oper == '*'){
-    double result = number1 * number2;
-    print(result);
+     print(number1 / number2);
   }
 
   else{
-    print('...thus execution failed!');
+    print('..., execution failed!');
   } */
 
 
-  // SWITCH STATAEMENT      .     .     .
+
+  // SWITCH STATAEMENTS      .     .     .
+
+  // switch statement for the calculator
+/* 
+  switch (oper){
+    case '+':
+    print(number1 + number2);
+    break;
+
+    case '-':
+    print(number1 - number2);
+    break;
+
+    case '*':
+    print(number1 * number2);
+    break;
+
+    case '/':
+    print(number1 / number2);
+    break;
+    default:
+    print('..., execution failed!');
+  } */
+
 
   // multiple case labels are grouped together to execute the same code block IN THE EXAMPLE below
 
@@ -143,6 +164,7 @@ void main(){
     default:
       print('Number is greater than five');
   } */
+
 
   // a nested switch statement is used to handle different cases based on the combination of 'fruit' and 'count'
 
@@ -175,12 +197,15 @@ void main(){
   } */
 
 
-  //  FOR LOOP      .     .     .
+
+  // LOOPS      .     .     .
   
+  //  for loop
+
   /* for(var i = 0; i <= 10; ++i)
   print("Number $i"); */
 
-  //  WHILE LOOP      .     .     .
+  //  while loop
 
   /* var i = 0;
   while (i <= 10) {
@@ -188,7 +213,8 @@ void main(){
   i++;} */
 
 
-  // DO WHILE LOOP      .     .     .
+  // do while loop
+
   /* var i = 0;
   do {
     print("Number $i");
@@ -196,7 +222,7 @@ void main(){
   } while (i <= 10); */
 
 
-  // FOR IN LOOP      .     .     .
+  // for in loop
 
  /*  List<String> friendsList = ["A", "B", "C", "D", "E"];
   for(final friend in friendsList){
@@ -204,6 +230,41 @@ void main(){
   } */
 
 
+  // SIMPLE GUESSING GAME CONTAINING IF STATEMENTS AND WHILE LOOP     .     .     .
 
+  // made use of a anonymous function if interested
+ /*  String Function(String) prompt = (String value){
+    return value;
+  }; */
+  
+  /* String word = 'monster';
+  String guess = '';
+  int guess_status = 0;
+  int guess_limit = 2;
+  bool out_of_guesses = false;
+
+  // print(prompt("enter guess: ")); // for the function
+  print('enter guess: ');
+  guess = stdin.readLineSync()!;
+
+  while (guess != word && !out_of_guesses){
+    if (guess_status < guess_limit){
+      // print(prompt('wrong guess. try again!')); // for the function
+      print('wrong guess. try again!');
+      guess = stdin.readLineSync()!;
+      guess_status ++;
+
+    }        
+    else{
+      out_of_guesses = true ;
+    }
+  }
+      
+  if (out_of_guesses){
+     print("you loose");
+  }     
+  else{print("correct guess!");} */
+      
+  
 
 }

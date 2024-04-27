@@ -1,15 +1,17 @@
 
+/* 
+
+  THE PAGE COVERS BRIEFS OR BASICS OF DART SUCH AS :
+    USER INPUT
+    A SIMPLE MADLIB'S GAME AT THE BOTTOM
+
+*/
+
 // import 'dart:ffi';
 import 'dart:io';
 // import 'dart:math';
 
-/* 
 
-  THE PAGE COVERS BRIEFS OR BASICS OF DART SUCH AS :
-  USER INPUT,
-  A SIMPLE MADLIB'S GAME AT THE BOTTOM,
-
-*/
 
 void main(){
  /* var name = 'kevin';
