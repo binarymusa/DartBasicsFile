@@ -4,7 +4,7 @@
 
   THE PAGE COVERS BRIEFS OR BASICS OF OBJECT ORIENTED PROGRAMMING(OOP)
    ITEMS:
-   SImple OOP
+   `SIMPLE OOP
     INHERITANCE
     POLYMORPHISM
     DUCK TYPING
@@ -23,13 +23,14 @@ class Person {
   String name;
   int age;
 
-  Person(this.name, this.age); // constructor
+  Person(this.name, this.age); // constructor. constructor initializer shorthand or syntactic sugar
 
   // class method
   void greet() {
     print("Hello, my name is $name and I'm $age years old.");
   }
 } */
+
 
 
 // INHERITANCE      .     .     .
@@ -93,7 +94,7 @@ class Dog extends Animal {
 
 
 // example 2
-abstract class Shape {
+/* abstract class Shape {
   void draw();
 }
 
@@ -109,18 +110,48 @@ class Square implements Shape {
   void draw() {
     print("Drawing a square");
   }
-}
-
-
+} */
 
 
 // example 3
+// Interface definition
+/* abstract class Animal {
+  void makeSound();
+  void eat();
+}
+
+// Implementing the interface
+class Dog implements Animal {
+  @override
+  void makeSound() {
+    print('Woof');
+  }
+
+  @override
+  void eat() {
+    print('Eating bones');
+  }
+}
+
+class Cat implements Animal {
+  @override
+  void makeSound() {
+    print('Meow');
+  }
+
+  @override
+  void eat() {
+    print('Eating fish');
+  }
+} */
+
+
 
 
 // DUCK TYPING      .     .     .
 
 // example 1 
-class Duck {
+/* class Duck {
   void quack() {
     print("Quack");
   }
@@ -132,25 +163,31 @@ class Duck {
 
 void makeDuckSwim(dynamic duck) {
   duck.swim();
-}
+} */
 
 
 
 // example 2 
 
 
+
 // example 3 
+
+
+
+
 
 void main(){
 
-  // SIMPLE OOP      .     .     .
+  // SIMPLE OOP    -     -     -
 
   // example 1 body
   /* var person = Person("John", 30); // create instance 'person' with 2 credentials
   person.greet(); // call the class method 'greet' on instance person */
 
  
-  // INHERITANCE  BODY    .     .     .
+
+  // INHERITANCE  BODY    -     -     -
 
   // example 1 body
   /* var dog = Dog();
@@ -175,8 +212,7 @@ void main(){
 
 
 
-
-  // POLYMORPHISM BODY    .     .     .
+  // POLYMORPHISM BODY    -     -     -
 
   // example 1 body
   /* Dog animal = Dog();
@@ -186,13 +222,21 @@ void main(){
 
 
   // example 3 body
+  /* final dog = Dog();
+  dog.makeSound(); // Output: Woof
+  dog.eat(); // Output: Eating bones
+  
+  final cat = Cat();
+  cat.makeSound(); // Output: Meow
+  cat.eat(); // Output: Eating fish */
 
 
-  // DUCK TYPING  BODY    .     .     .
+
+  // DUCK TYPING  BODY    -     -     -
 
   // example 1 body
-  var myDuck = Duck();
-  makeDuckSwim(myDuck);
+  /* var myDuck = Duck();
+  makeDuckSwim(myDuck); */
 
 
   // example 2 body
