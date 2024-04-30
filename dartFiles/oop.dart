@@ -11,6 +11,7 @@
 
 */
 
+
 import 'dart:io';
 
 // SIMPLE OOP     .     .     .
@@ -175,7 +176,24 @@ void makeDuckSwim(dynamic duck) {
 
 
 
+//  QUIZ TEST USING OOP     -     -     -
 
+class Test{
+
+  String question;
+  double answer;
+
+  Test(this.question, this.answer);
+
+  
+}
+
+double promptAnswer(String answerText){
+  print(answerText);
+  double answer = double.parse(stdin.readLineSync()!);
+  return answer;
+
+}
 
 void main(){
 
@@ -244,5 +262,27 @@ void main(){
 
   // example 13 body
 
+
+  List<Test> mathQuestion =
+  [
+    Test('1+5 = ', 6.0),
+    Test('5*9 = ', 45.0),
+    Test('40/2 = ', 20.0)
+  ];
+
+  int grade = 0;
+
+  for(final question in mathQuestion){
+    var userAnswer = promptAnswer(question.question);
+
+    if (userAnswer == question.answer){
+      grade ++;
+      print('grading progress ...')    ; 
+    }    
+    
+  }
+  print('you got ${grade}/${mathQuestion.length}');
+
+  
 
 }
