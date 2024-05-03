@@ -10,6 +10,7 @@
 
 */
 
+
 void main(){
   // LISTS  .   .   .   .
 
@@ -67,10 +68,45 @@ void main(){
 
 
   // MAP(DICTIONARY)  .   .   .
+/* 
+  Map<String, int> firstMap = {
+      'John': 30,
+      'Alice': 25,
+      'Bob': 35,
+    };
+
+  // var cars = {'buggati': 2.5 , 'lamborghini': 600, 'Koenigsegg': 3};
+
+  print('${firstMap.keys}, ${firstMap}, ${firstMap.values}');
+    
+  firstMap['Eve'] = 28;
+
+  print('John\'s age: ${firstMap['John']}');
+  print('Alice\'s age: ${firstMap['Alice']}');
+
+  firstMap.forEach((name, age) {
+    print('$name is $age years old');
+  });
+
+  if (firstMap.containsKey('Bob')) {
+    print('Bob is in the map');
+  }
+
+  if (firstMap.containsValue(25)){
+    print('we got a 25 in the building');
+  }
+  firstMap.remove('Alice');
 
   
+  firstMap.clear(); */
+  
+   /* String? name = 'kevin';
+    name = null;
+    name = 'geo';
+    print(name);
 
-
+    List<String?>? names = ['linda', null]; // declare names aas null, also says values in the list can be null
+    names = null; */
 }
 
 
@@ -79,4 +115,4 @@ void main(){
 
 
 
-// Dictionaries .   .   .     
+   

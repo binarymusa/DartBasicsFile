@@ -44,6 +44,20 @@ double num(){
 }
  */
 
+
+// ENUM     -     -     -
+
+/* enum Weekday {
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday
+} */
+
+
 void main(){
 
   // IF STATEMENT   .     .     .
@@ -266,5 +280,28 @@ void main(){
   else{print("correct guess!");} */
       
   
+  // ENUM     -     -     -
+/* 
+  // Accessing enum values
+  print(Weekday.monday); // Output: Weekday.monday
+
+  // Enum values can be compared using ==
+  print(Weekday.monday == Weekday.tuesday); // Output: false
+
+  // Enum values can also be used in switch statements
+  Weekday day = Weekday.saturday;
+
+  switch (day) {
+    case Weekday.saturday:
+  
+      break;
+    case Weekday.sunday:
+      print('It\'s the weekend!');
+      break;
+    default:
+      print('It\'s a weekday');
+  } */
+
+
 
 }

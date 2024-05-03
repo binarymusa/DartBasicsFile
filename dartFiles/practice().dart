@@ -99,9 +99,14 @@ print(test2); */
   print('$otherValue'); */
 
   // if the variable is null it is initialized to the value of the right side
-  /* int? value2 ;
-  int othervalue2 = value2 ?? 10;
+  /* int? value2  ;
+  int othervalue2 = value2 ??= 10; // or just ??
   print('$othervalue2'); */
+
+  // conditional invocation
+  /* List<String?>? names = ['foo', null];
+  names?.length; */
+  
 
 
   /* if the value pi = to null, then the second round throws the null without executing the 
