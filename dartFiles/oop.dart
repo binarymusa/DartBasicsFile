@@ -95,10 +95,12 @@ class Dog extends Animal {
 
 
 // example 2
+// abstracr classs can't be instantiated
 /* abstract class Shape {
   void draw();
 }
 
+// concrete class
 class Circle implements Shape {
   @override
   void draw() {
@@ -123,6 +125,7 @@ class Square implements Shape {
 
 // Implementing the interface
 class Dog implements Animal {
+  // method overwriting
   @override
   void makeSound() {
     print('Woof');
@@ -177,7 +180,7 @@ void makeDuckSwim(dynamic duck) {
 
 
 //  QUIZ TEST USING OOP     -     -     -
-
+/* 
 class Test{
 
   String question;
@@ -193,7 +196,26 @@ double promptAnswer(String answerText){
   double answer = double.parse(stdin.readLineSync()!);
   return answer;
 
+} */
+
+
+class Mammal{      
+ String name;
+ Mammal(this.name);
 }
+
+// method extension
+extension run on Mammal{
+  void eats(){
+    print('$name does eat');
+  }
+}
+
+// class Human extends Mammal{}
+
+
+
+
 
 void main(){
 
@@ -260,10 +282,10 @@ void main(){
   // example 2 body
 
 
-  // example 13 body
+  // example 3 body
 
 
-  List<Test> mathQuestion =
+ /*  List<Test> mathQuestion =
   [
     Test('1+5 = ', 6.0),
     Test('5*9 = ', 45.0),
@@ -281,8 +303,10 @@ void main(){
     }    
     
   }
-  print('you got ${grade}/${mathQuestion.length}');
+  print('you got ${grade}/${mathQuestion.length}'); */
 
-  
+  final person = Mammal('james');
+  person.eats();
+  // person.move();
 
 }
